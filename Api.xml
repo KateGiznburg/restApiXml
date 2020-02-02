@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="restApiXmlSuite">
+    <test name="restApiXml" >
+        <groups>
+            <run>
+                <include name ="demo"/>
+                <include name ="testtask"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="restApiXmlFramework"/>
+            <package name="restApiXml"/>
+            <package name="stepsDefinition"/>
+        </packages>
+    </test>
+</suite>
