@@ -13,7 +13,7 @@ import restApiXml.authors;
 import website.bookDepository;
 import static org.junit.Assert.assertNotEquals;
 
-public class egualityFeature {
+public class equalityFeature {
 
     public bookDepository webSite = new bookDepository();
     public authors restApiXml = new authors();
@@ -44,6 +44,7 @@ public class egualityFeature {
     }
 
     @And("Close the browser")
+
     @AfterClass(groups = "testtask")
     public static void teardown(){
         driver.close();
